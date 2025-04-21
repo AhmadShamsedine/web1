@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App - Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Admin Dashboard</h1>
+            <div class="user-info">
+                <span id="admin-name">Admin</span>
+                <button id="logout-btn" class="btn-small">Logout</button>
+            </div>
+        </header>
+        
+        <main>
+            <div class="dashboard-section">
+                <h2>Registered Users</h2>
+                <div class="users-table-container">
+                    <table class="users-table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Quizzes Taken</th>
+                                <th>Average Score</th>
+                            </tr>
+                        </thead>
+                        <tbody id="users-data"></tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>

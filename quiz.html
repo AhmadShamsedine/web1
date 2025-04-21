@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App - Taking Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="quiz-title">Quiz Title</h1>
+            <div class="user-info">
+                <span id="user-name"></span>
+                <button id="home-btn" class="btn-small">Back to Home</button>
+            </div>
+        </header>
+        
+        <main>
+            <div id="quiz-container"></div>
+            
+            <div id="result-container" class="hidden">
+                <h2>Quiz Results</h2>
+                <p>Your score: <span id="score">0</span> out of <span id="total-questions">3</span></p>
+                <button id="back-to-home" class="btn">Back to Home</button>
+            </div>
+            
+            <div class="quiz-controls">
+                <button id="submit-quiz" class="btn">Submit Answers</button>
+            </div>
+        </main>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>
